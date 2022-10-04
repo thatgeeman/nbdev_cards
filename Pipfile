@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+nbdev = "==2.3.7"
+jupyter = "*"
+notebook = "*"
+fastcore = "==1.5.27"
+ipykernel = "*"
+
+[dev-packages]
+nbdev-cards = {editable = true, path = "."}
+
+[requires]
+python_version = "3.9"

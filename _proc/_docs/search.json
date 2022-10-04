@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "Card – a basic card game",
+    "section": "",
+    "text": "These are the ranks:\nThese are the 4 suits:\nThey can be indixed into using indices.\nTherefore each suit and rank is represented by an index.\nsource"
+  },
+  {
+    "objectID": "card.html#comparions-are-possible-too",
+    "href": "card.html#comparions-are-possible-too",
+    "title": "Card – a basic card game",
+    "section": "Comparions are possible too",
+    "text": "Comparions are possible too\n\nsource\n\nCard.__eq__\n\n Card.__eq__ (other:__main__.Card)\n\nReturn self==value.\n\nCard(0, 1) == Card(0, 1)\n\nTrue\n\n\n\nCard(0, 1) < Card(1, 2)\n\nTrue\n\n\n\nCard(3, 3) > Card(1, 2)\n\nTrue"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_cards",
+    "section": "",
+    "text": "nbdev cards tutorial."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_cards",
+    "section": "Install",
+    "text": "Install\npip install nbdev_cards"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_cards",
+    "section": "How to use",
+    "text": "How to use\n\ncard = Card(1, 2)\ncard\n\n2 ♥\n\n\n\ndeck = Deck()\ndeck\n\nA ♠, 2 ♠, 3 ♠, 4 ♠, 5 ♠, 6 ♠, 7 ♠, 8 ♠, 9 ♠, 10 ♠, J ♠, Q ♠, K ♠, A ♥, 2 ♥, 3 ♥, 4 ♥, 5 ♥, 6 ♥, 7 ♥, 8 ♥, 9 ♥, 10 ♥, J ♥, Q ♥, K ♥, A ♣, 2 ♣, 3 ♣, 4 ♣, 5 ♣, 6 ♣, 7 ♣, 8 ♣, 9 ♣, 10 ♣, J ♣, Q ♣, K ♣, A ♦, 2 ♦, 3 ♦, 4 ♦, 5 ♦, 6 ♦, 7 ♦, 8 ♦, 9 ♦, 10 ♦, J ♦, Q ♦, K ♦\n\n\n\ndeck.pop()\n\nK ♦"
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck – a collection of cards",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nClass to store a deck of Cards\n\ndeck = Deck()\n\n\ndeck\n\nA ♠, 2 ♠, 3 ♠, 4 ♠, 5 ♠, 6 ♠, 7 ♠, 8 ♠, 9 ♠, 10 ♠, J ♠, Q ♠, K ♠, A ♥, 2 ♥, 3 ♥, 4 ♥, 5 ♥, 6 ♥, 7 ♥, 8 ♥, 9 ♥, 10 ♥, J ♥, Q ♥, K ♥, A ♣, 2 ♣, 3 ♣, 4 ♣, 5 ♣, 6 ♣, 7 ♣, 8 ♣, 9 ♣, 10 ♣, J ♣, Q ♣, K ♣, A ♦, 2 ♦, 3 ♦, 4 ♦, 5 ♦, 6 ♦, 7 ♦, 8 ♦, 9 ♦, 10 ♦, J ♦, Q ♦, K ♦\n\n\n\ndeck.cards\n\n(#52) [A ♠,2 ♠,3 ♠,4 ♠,5 ♠,6 ♠,7 ♠,8 ♠,9 ♠,10 ♠...]\n\n\n\nlen(deck)\n\n52\n\n\nDocments style comments\n\n\n\nDeck.pop\n\n Deck.pop (idx=-1)\n\nPop an item from the deck\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nidx\nint\n-1\nindex to pop, default -1\n\n\nReturns\nDeck\n\n\n\n\n\n\ndeck.pop()\n\nK ♦\n\n\n\nlen(deck)\n\n51\n\n\n\n\n\nDeck.shuffle\n\n Deck.shuffle (seed=42)\n\nShuffle the Deck\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nseed\nint\n42\nrandom seed\n\n\nReturns\nDeck\n\n\n\n\n\nBefore shuffle:\n\ndeck\n\nA ♠, 2 ♠, 3 ♠, 4 ♠, 5 ♠, 6 ♠, 7 ♠, 8 ♠, 9 ♠, 10 ♠, J ♠, Q ♠, K ♠, A ♥, 2 ♥, 3 ♥, 4 ♥, 5 ♥, 6 ♥, 7 ♥, 8 ♥, 9 ♥, 10 ♥, J ♥, Q ♥, K ♥, A ♣, 2 ♣, 3 ♣, 4 ♣, 5 ♣, 6 ♣, 7 ♣, 8 ♣, 9 ♣, 10 ♣, J ♣, Q ♣, K ♣, A ♦, 2 ♦, 3 ♦, 4 ♦, 5 ♦, 6 ♦, 7 ♦, 8 ♦, 9 ♦, 10 ♦, J ♦, Q ♦\n\n\nAfter shuffle:\n\ndeck.shuffle()\n\n(#51) [3 ♠,3 ♥,Q ♠,A ♦,8 ♣,2 ♠,K ♠,J ♠,6 ♣,7 ♦...]"
+  }
+]
